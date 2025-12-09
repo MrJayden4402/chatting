@@ -47,7 +47,6 @@ void CloseWithUser(void)
 int main(int argc, char *argv[])
 {
 	string cmdstring(*argv);
-	// MessageBox(0, cmdstring.c_str(), "cmdstring", 0);
 	istringstream istr(cmdstring);
 	int Port;
 	string input;
@@ -56,8 +55,7 @@ int main(int argc, char *argv[])
 	istringstream getport(input);
 	getport >> Port;
 	cout << cmdstring << endl;
-	// new thread(CloseWithUser);
-	// MessageBox(0, to_string(Port).c_str(), 0, 0);
+	new thread(CloseWithUser);
 	RunServer(Port);
 	return 0;
 }
