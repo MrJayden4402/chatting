@@ -2,4 +2,5 @@
 实现了一个简易的局域网聊天工具。
 
 ## 编译
-用g++编译的时候应该加入-lws2_32 以及 -mwindows
+用g++编译的时候应该加入-lws2_32 以及 -mwindows\
+需要编译EasySocketServer.cpp以及chat.cpp
